@@ -1,0 +1,120 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+  --black: black;
+  --azure: azure;
+  --white: white;
+  --shadow: rgba(0, 0, 0, 0.5);
+}
+.dark-theme{
+  --black: white;
+  --azure: grey;
+  --white: #333;
+  --shadow: rgba(202, 200, 200, 0.671);
+}
+body{
+  background-color: var(--white);
+}
+.navigataionbar{
+    position: sticky;
+    top: 00px;
+    background: rgb(67, 195, 238);
+    color: white;
+    z-index: 1;
+}
+.navigataionbar a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+.rigth {
+    float: right;
+}
+ul{
+    width: 100%;
+    margin: 0px;
+}
+.navigataionbar ul li {
+    font-size: 20px;
+    list-style: none;
+    display: inline-block;
+    margin: 0 35px;
+    padding: 20px;
+    position: relative;
+}
+
+.navigataionbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: rgb(1, 2, 2);
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    transition: 0.5s;
+}
+
+.navigataionbar ul li:hover::after {
+    width: 100%;
+    text-align: center;
+}
+.welcome{
+    background-image: repeating-linear-gradient(-45deg, #817cd4, #7cccd4bf 1.5px, #c8724996 2px, #49c87c91 4px);  /* width:250px; */
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.extra{
+    margin-top:30px;
+  }
+input[type="text"]{
+    width: 200px;
+    height: 35px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+input[type="submit"]{
+    width: 80px;
+    height: 25px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgb(133, 131, 131);
+}
+.main-box{
+  display: flex;
+  flex-direction: row;
+  height: 550px;
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+  box-shadow: 1px 1px 1px 1px var(--shadow);
+}
+.content-box{
+  width: 50%;
+  height: 100%;
+}
+.content-box .full-content{
+  height: 50%;
+  background: skyblue;
+  padding: 10px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+.update-bad{
+  height: 50%;
+}
+.content-box .update-bad{
+  text-align: center;
+  display: grid;
+  place-items: center;
+  background: cornflowerblue;
+}
+.img-box{
+  height: 100%;
+}
+.img-box img{
+  height: 100%;
+  width:100%;
+}
